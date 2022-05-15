@@ -1,0 +1,23 @@
+{
+  "name": "testes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonas1611/testes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonas1611/testes/issues"
+  },
+  "homepage": "https://github.com/Jonas1611/testes#readme",
+  "dependencies": {
+    "prompt-sync-history": "^1.0.1"
+  }
+}
