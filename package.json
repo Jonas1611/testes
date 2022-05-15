@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/Jonas1611/testes#readme",
   "dependencies": {
+    "node-fecht": "^0.0.1-security",
+    "node-fecth": "^0.0.1-security",
+    "node-fetch": "^2.6.7",
     "prompt-sync-history": "^1.0.1"
   }
 }

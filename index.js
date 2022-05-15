@@ -1,5 +1,7 @@
 // Promises
 
+const { text, json } = require('stream/consumers');
+
 
 /*console.log(4);
 const promiseCriada = new Promise(function (resolve, reject) {
@@ -64,7 +66,7 @@ try {
 
 }catch(erro) {
     console.log("Deu ruim: ", erro.message);
-}*/
+}
 
 const prommiseteste = new Promise(function (resolve, reject) {
     setTimeout(() => {
@@ -82,4 +84,28 @@ const prommiseteste = new Promise(function (resolve, reject) {
     }) 
     .catch(function (reason) { 
         console.log("Deu ruim: ", reason.message);
+ });*/
+
+//   import fetch from "node-fecht";
+
+//const requisicao = fetch("https://pokeapi.co/api/v2/pokemon")
+
+import fetch from 'node-fetch';
+
+const requisicao = fetch("https://pokeapi.co/api/v2/pokemon");
+
+requisicao.then(response => {
+    
+    console.log("Requisição finalizada com sucesso");
+
+    //console.log(response);
+
+    const textPromise = response.text();
+
+    textPromise.then(text => {
+        const json = JSON.parse(text);
+        console.log(json);
     });
+
+});
+node
